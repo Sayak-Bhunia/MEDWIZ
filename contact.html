@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="/img5.jpg" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        height: 80px;
+        width: 100%;
+        font-family: "OpenSans", serif;
+        background: #130c39;
+        padding: 0rem calc((100vw - 1450px) / 2);
+      }
+
+      label.logo {
+        color: #407bd8;
+        line-height: 80px;
+        padding: 0 100px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: "Audiowide", serif;
+      }
+
+      nav ul {
+        float: right;
+        margin-right: 20px;
+      }
+
+      nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        font-family: "Poppins", serif;
+        font-size: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+
+      a.active,
+      a:hover {
+        color: #407bd8;
+        transition: 0.2s;
+      }
+
+      .checkbtn {
+        color: white;
+        font-size: 30px;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+      }
+
+      #check {
+        display: none;
+      }
+
+      @media (max-width: 952px) {
+        label.logo {
+          font-size: 30px;
+          padding-left: 50px;
+        }
+        nav ul li a {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 858px) {
+        .checkbtn {
+          display: block;
+        }
+        ul {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #0e3372;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all 0.5s;
+        }
+        nav ul li {
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a {
+          font-size: 20px;
+        }
+        a:hover,
+        a.active {
+          background: none;
+          color: #407bd8;
+        }
+        #check:checked ~ ul {
+          left: 0;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      header {
+        background-color: #407bd8;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .social-media {
+        text-align: center;
+      }
+
+      .social-media h3 {
+        font-size: 24px;
+      }
+
+      .social-media ul {
+        padding: 0;
+      }
+
+      .social-media li {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #407bd8;
+        color: #fff;
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: auto;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MEDWIZ</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="contact.html" class="button">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h3>Connect on Social Media</h3>
+    </header>
+    <main>
+      <section class="social-media">
+        <ul>
+          <li>
+            <a href="mailto:sbhunia2903@gmail.com" target="_blank"
+              ><img
+                src="https://logodownload.org/wp-content/uploads/2018/03/gmail-logo-16.png"
+                alt="Gmail"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sayak-Bhunia" target="_blank"
+              ><img
+                src="https://marcas-logos.net/wp-content/uploads/2020/03/GITHUB-LOGO.png"
+                alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/sayak-bhunia-452419252/"
+              target="_blank"
+              ><img
+                src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png"
+                alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Sayak_kun" target="_blank"
+              ><img
+                src="https://th.bing.com/th/id/OIP.KTr_ReFQkeMHqSKyP9prZgHaEK?pid=ImgDet&w=474&h=266&rs=1"
+                alt="X(Twitter)"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/raw_shots29/" target="_blank"
+              ><img
+                src="https://th.bing.com/th/id/OIP.JCI8klaaA1w4LCtljpeJoAHaHa?pid=ImgDet&rs=1"
+                alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; MEDWIZ | All rights reserved</p>
+    </footer>
+  </body>
+</html>
